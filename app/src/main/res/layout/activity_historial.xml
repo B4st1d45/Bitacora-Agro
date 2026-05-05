@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121212">
+
+    <!-- Panel de Control Superior -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="#1E1E1E"
+        android:elevation="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTROS GUARDADOS"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFD600"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Contenedor de Filtros con Estilo Industrial -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:background="#2C2C2C"
+            android:padding="2dp">
+
+            <Button
+                android:id="@+id/btnFiltroTodos"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="TODOS"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#333333"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                app:cornerRadius="4dp"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"/>
+
+            <View android:layout_width="2dp" android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnFiltroOT"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="TRABAJOS"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#333333"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                app:cornerRadius="4dp"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"/>
+
+            <View android:layout_width="2dp" android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnFiltroMant"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="TALLER"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#333333"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                app:cornerRadius="4dp"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Lista de Registros -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHistorial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="12dp"
+        android:paddingTop="12dp"
+        android:clipToPadding="false"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+</LinearLayout>

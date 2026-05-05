@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvNumMantencion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="N° Mantención: --"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/etFechaMantencion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha de Mantención"
+            android:focusable="false"
+            android:padding="12dp"
+            android:background="#2C2C2C"
+            android:textColor="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/etHorometro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Horómetro Actual (Horas)"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:padding="12dp"
+            android:background="#2C2C2C"
+            android:textColor="#FFFFFF"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginVertical="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TAREAS REALIZADAS (Checklist)"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            android:layout_marginBottom="10dp"/>
+
+        <CheckBox
+            android:id="@+id/cbAceiteMotor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:text="Cambio Aceite y Filtro Motor" />
+
+        <CheckBox
+            android:id="@+id/cbAceiteHidraulico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:text="Cambio Aceite y Filtro Hidráulico" />
+
+        <CheckBox
+            android:id="@+id/cbEngrase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:text="Engrase General de Puntos" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"
+            android:layout_marginVertical="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OTROS REPUESTOS O FILTROS"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:textColor="#FFFFFF"/>
+
+        <LinearLayout
+            android:id="@+id/contenedorAceite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/btnAgregarAceite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ Añadir otro repuesto"
+            android:textColor="#FFD600"
+            android:textSize="16dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+        <EditText
+            android:id="@+id/etObsMantencion"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Notas adicionales (Ej: 'Se detectó fuga en manguera')"
+            android:gravity="top"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:background="#2C2C2C"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnGuardarMantencion"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="GUARDAR Y GENERAR REPORTE"
+            android:backgroundTint="#E65100"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            app:cornerRadius="12dp"
+            android:elevation="6dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</ScrollView>

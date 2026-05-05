@@ -1,0 +1,13 @@
+<resources>
+    <!-- Base del tema forzando colores oscuros -->
+    <style name="Theme.Bitacora" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Fondo de las pantallas -->
+        <item name="android:windowBackground">#121212</item>
+        <!-- Color principal (Botones) -->
+        <item name="colorPrimary">#1976D2</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <!-- Color de los textos por defecto -->
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:editTextColor">#FFFFFF</item>
+    </style>
+</resources>

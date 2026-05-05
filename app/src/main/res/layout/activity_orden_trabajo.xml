@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Encabezado Estilo Mantención -->
+        <TextView
+            android:id="@+id/numeroOrden"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="N° Orden: --"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Campos de Entrada -->
+        <EditText
+            android:id="@+id/etHectareas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hectáreas"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:background="#2C2C2C"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/etTrabajo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tipo de Trabajo"
+            android:padding="12dp"
+            android:background="#2C2C2C"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/etFundo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fundo"
+            android:padding="12dp"
+            android:background="#2C2C2C"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/etSector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sector"
+            android:padding="12dp"
+            android:background="#2C2C2C"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/etLtAgua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Litros de Agua"
+            android:inputType="number"
+            android:padding="12dp"
+            android:background="#2C2C2C"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="15dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#444444"
+            android:layout_marginVertical="10dp"/>
+
+        <!-- Secciones Dinámicas -->
+        <Button
+            android:id="@+id/btnAgregarTiempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ Agregar Tiempo"
+            android:textColor="#FFD600"
+            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+        <LinearLayout
+            android:id="@+id/contenedorTiempos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="15dp" />
+
+        <Button
+            android:id="@+id/btnAgregarQuimico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ Agregar Químico"
+            android:textColor="#FFD600"
+            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+        <LinearLayout
+            android:id="@+id/contenedorQuimicos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <EditText
+            android:id="@+id/etObservaciones"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Observaciones"
+            android:gravity="top"
+            android:padding="10dp"
+            android:background="#2C2C2C"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Botones de Acción -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:weightSum="2">
+
+            <!-- Botón de Acción Único -->
+            <Button
+                android:id="@+id/btnGuardarOrden"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:text="GUARDAR Y GENERAR REPORTE"
+                android:backgroundTint="#E65100"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                app:cornerRadius="12dp"
+                android:elevation="6dp"
+                android:textStyle="bold"/>
+            </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

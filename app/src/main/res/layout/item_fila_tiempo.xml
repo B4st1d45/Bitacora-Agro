@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    app:cardBackgroundColor="#2C2C2C"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <EditText
+            android:id="@+id/etFecha"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1.2"
+            android:hint="Fecha"
+            android:gravity="center"
+            android:background="@null"
+            android:textColor="#FFD600"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:focusable="false"/>
+
+        <View android:layout_width="1dp" android:layout_height="match_parent" android:background="#444444"/>
+
+        <EditText
+            android:id="@+id/etInicio"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:hint="Inicio"
+            android:gravity="center"
+            android:background="@null"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:focusable="false"/>
+
+        <View android:layout_width="1dp" android:layout_height="match_parent" android:background="#444444"/>
+
+        <EditText
+            android:id="@+id/etTermino"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:hint="Fin"
+            android:gravity="center"
+            android:background="@null"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:focusable="false"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "902490243663",
+    "project_id": "bitacora-be216",
+    "storage_bucket": "bitacora-be216.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902490243663:android:0af41b2a03445ae643e03a",
+        "android_client_info": {
+          "package_name": "com.example.bitacora"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqB_UtYzCx58LqeF1M-YuOxgqB4tIb8QQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
