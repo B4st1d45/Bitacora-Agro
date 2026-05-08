@@ -1,4 +1,4 @@
-# 📄 SISTEMA DE GESTION AGRICOLA - ANDROID 🚜
+# Sistema de Gestión Agricola - Android 
 
 Aplicación móvil desarrollada en **Kotlin** diseñada para digitalizar la operación de maquinaria y mantenimientos en terreno.
 
